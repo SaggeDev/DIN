@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>¿Quien quiere buscar?</h1>
+    <form action="opciones.php" method="POST">
+        <div class="container">
+            <div class="form-group row">
+            <label for="inputState">Soy mas de: </label>
+            <select id="lugarIn" class="form-control" name="place" >
+                <option>Playa</option>
+                <option>Montaña</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <label for="inputState">Estudio: </label>
+            <select id="estudiarIn" class="form-control" name="study">
+                <option>Cada dia</option>
+                <option>En el último momento</option>
+                <option>¿Estudiar?</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-1" id="buttonEnviar">Enviar</button>
+    </form>
+</body>
+<script>
+    $(document).ready(function(){
+    $("#buttonEnviar").click(function(){
+    var lugar = $("#place").val();
+    var estudio = $("#study").val();
+  });
+});
+</script>
+</html>
